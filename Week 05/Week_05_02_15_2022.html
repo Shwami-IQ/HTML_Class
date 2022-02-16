@@ -1,0 +1,102 @@
+<html>
+    <title> Week 05 Code </title>
+    <head>
+        <style>
+            #t01 {background-color: lightcyan;}
+            .t02 {background-color: lightgreen;}
+        </style>
+    </head>
+    <body>
+        <h1> Week 05 Code 01: colspan & rowspan </h1>
+        <table id="t01" border="1">
+            <!--columns span-->
+            <tr>
+                <th colspan="2"> 65 </th>
+                <th colspan="2"> 40 </th>
+                <th colspan="2"> 20 </th>
+            </tr>
+            <!--Contents for the column span-->
+            <tr>
+                <th> Men </th>
+                <th> Women </th>
+                <th> Men </th>
+                <th> Women </th>
+                <th> Men </th>
+                <th> Women </th>
+            </tr>
+            <!---->
+            <tr>
+                <td> 82 </td>
+                <td> 80 </td>
+                <td> 62 </td>
+                <td> 62 </td>
+                <td> 52 </td>
+                <td> 50 </td>
+            </tr>
+        </table>
+        <!---->
+        <br>
+        <table class="t02" border="1">
+            <tr>
+                <th rowspan="2"> Favorite </th>
+                <th> Color </th>
+                <td> blue </td>
+                <td> gray </td>
+            </tr>
+
+            <tr>
+                <th> Flavor </th>
+                <td> Blueberry </td>
+                <td> Chocolate </td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!-- Code 02 -->
+<html>
+    <head>
+        <style>
+            body {background-color: blanchedalmond;}
+            #f01 {background-color: rgb(168, 140, 221);}
+
+            input {
+                width: 100%;
+                padding: 12px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Week 05 Code 02: HTML form </h1>
+        <form id="f01">
+            <div id="d01">
+                Customer Name: <input type="text" id="cname">
+                <br>
+                Customer Email: <input type="text" id="cemail">
+            </div>
+        </form>
+    </body>
+</html>
+
+<!-- Code 03 -->
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> Week 05 code 03: Form with fieldset </h1>
+
+        <form id="f05">
+            <fieldset>
+                <legend> Personal Information </legend>
+                Customer Name: <input type="text" id="name01">
+                Customer Phone: <input type="text" id="pname">
+            </fieldset>
+            <fieldset>
+                <legend> Customer Address </legend>
+                Street Name: <input type="text" id="nstreet">
+                State: <input type="text" id="cstate">
+                City: <input type="text" id="xcity">
+            </fieldset>
+        </form>
+    </body>
+</html>
