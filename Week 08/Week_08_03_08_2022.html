@@ -1,0 +1,97 @@
+<html>
+    <title>Week 08 Code</title>
+    <head>
+        <style>
+            body {background-color: bisque;}
+            #log {background-color: aqua;}
+        </style>
+    </head>
+    <body>
+        <h1>Week 08 code 01: Javascript Login form</h1>
+        <div id="log">
+            <form name="f1" action="#">
+                <img src="person.jpg" height="200" width="200">
+                <br> <br>
+                User Name: <input 
+                    type="text" 
+                    placeholder="Enter Username" 
+                    name="uname" 
+                    id="uname"
+                >
+
+                <br> <br>
+
+                Password: <input 
+                    type="text" 
+                    placeholder="Enter Password" 
+                    name="upass" 
+                    id="upass"
+                >
+
+                <br> <br>
+
+                <button type="submit" name="submit" value="submit" onclick="required()">Login</button>
+                <button type="reset" name="reset" value="reset" >Cancel</button>
+            </form>
+            <script>
+                function required()
+                {
+                    var user= document.forms["f1"]["uname"].value;
+                    var pass= document.forms["f1"]["upass"].value;
+
+                    if(user == "Alvaro" && pass == "Coto")
+                    {
+                        alert("Success");
+                    }
+                    else
+                    {
+                        alert("Failure");
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1>Week 08 code 02: Math calculation</h1>
+        <fieldset>
+            <legend>Addition</legend>
+            number 1: <input
+                type="text"
+                id="n1"
+            >
+
+<br>
+
+            number 2: <input
+                type="text"
+                id="n2"
+            >
+<br>
+            <input type="button" onclick="Add()" value="Addition">
+            <input type="button" onclick="multiply()" value="Multiplication">
+            <p>
+                The Result is: <span id="result"> </span>
+            </p>
+            <script>
+                function Add()
+                {
+                    var num1 = document.getElementById("n1").value;
+                    var num2 = document.getElementById("n2").value;
+
+                    document.getElementById("result").innerHTML = (+num1 + +num2);
+                }
+
+                function multiply()
+                {
+                    var num1 = document.getElementById("n1").value;
+                    var num2 = document.getElementById("n2").value;
+
+                    document.getElementById("result").innerHTML = (+num1 * +num2);
+                }
+            </script>
+        </fieldset>
+    </body>
+</html>
