@@ -1,0 +1,68 @@
+img {
+    height: 400px;
+    width: 100%;
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+fieldset {
+    border-color: aquamarine;
+}
+label {
+    color: aquamarine;
+}
+.F50 {
+    width: 50%;
+    vertical-align: top;
+}
+button {
+    background-color: gray;
+    color: aquamarine;
+    border-radius: 5px;
+    top: 50%;
+    margin-left: 5px;
+    min-height: 25px;
+    min-width: 120px;
+}
+#webTitle {
+    text-align: center;
+    font-weight: bold;
+    color: aquamarine;
+}
+#Bg {
+    background-color: black;
+    background-image: url('Bg.png');
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#Cform {
+    background-color: grey;
+}
+#Uplace {
+    width: 100%;
+}
+#UPdesc {
+    width: 100%;
+    height: 200px;
+}
+#lSec {
+    padding-left: 50px;
+}
+#rSec {
+    padding-right: 50px;
+    padding-left: 25px;
+}
+#tacBox {
+    background-color: whitesmoke;
+    height: 30px;
+}
+#tacT {
+    color: black;
+    vertical-align: middle;
+}
+#formButton {
+    background-color: antiquewhite;
+    height: 60px;
+    vertical-align: middle;
+}
