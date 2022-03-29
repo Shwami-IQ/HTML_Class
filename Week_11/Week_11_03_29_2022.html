@@ -1,0 +1,88 @@
+<html>
+    <title>Week 11</title>
+    <head></head>
+    <body>
+        <h1>Week 11 code 01: Javascript Array</h1>
+
+        <script>
+            /* Javascript Arrays */
+            var ArrayName = ["Alvaro", "De Jesus", "Coto"];
+            document.write("Display Array Element </br>");
+            document.write(ArrayName);
+
+            document.write("</br></br>Display specific Array Element </br>");
+            document.write(ArrayName[2]);
+
+            document.write("</br></br>Display Array Length</br>")
+            document.write(ArrayName.length);
+
+            document.write("</br></br>Add New element in Array</br>");
+            ArrayName.push("Mark");
+            document.write(ArrayName)
+
+            document.write("</br></br>Remove last element in Array</br>");
+            ArrayName.pop();
+            document.write(ArrayName);
+
+            document.write("</br></br>Remove first element in Array</br>");
+            ArrayName.shift();
+            document.write(ArrayName);
+            ArrayName.push("Centeno")
+
+            document.write("</br></br>Remove middle element in Array</br>");
+            ArrayName.splice(1,1);
+            document.write(ArrayName + "</br></br>");
+
+            var NumList = [1,2,3,4,5,6,]
+            document.write(NumList + "</br></br>")
+            NumList.push(7)
+            document.write(NumList + "</br></br>")
+            NumList.splice(2,2)
+            document.write(NumList + "</br></br>")
+
+        </script>
+    </body>
+</html>
+
+<html>
+    <head></head>
+    <body>
+        <h1>Week 11 code 02: Display forms data on the same web page</h1>
+
+        <form>
+            First Name: <input type="text" id="fName" placeholder="Please enter First Name"> </br>
+            Last Name: <input type="text" id="lName" placeholder="Please enter Last Name"> </br>
+            <input type="submit" onclick="showInput();"
+        </form>
+        </br>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <script>
+           function showInput()
+           {
+               document.getElementById("d1").innerHTML = document.getElementById("fName").value
+               document.getElementById("d2").innerHTML = document.getElementById("lName").value
+           }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head></head>
+    <body>
+        <h1>Week 11 code 03: Javascript Object</h1>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+           var student = {
+               studentid:"001",
+               fname:"Alvaro",
+               lname:"Coto"
+           }
+           document.getElementById("demo").innerHTML = "First Method: = "+ student.studentid+" "+student.fname+" "+student.lname;
+           document.getElementById("demo1").innerHTML = "Second Method: = "+ student["studentid"]+" "+student["fname"]+" "+student["lname"];
+        </script>
+    </body>
+</html>
