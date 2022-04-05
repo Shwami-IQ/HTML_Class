@@ -22,7 +22,7 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 45%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -93,4 +93,5 @@
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
+    background-color: aquamarine;
 }
