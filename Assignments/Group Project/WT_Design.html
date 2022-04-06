@@ -1,59 +1,73 @@
+<!DOCTYPE html>
 <html>
-<title></title>
 
 <head>
     <link rel="stylesheet" href="Design.css">
 </head>
 
 <body>
-    <div class="split">
-        <div class="slideShow">
-            <div class="mySlides">
-                <div class="slideNumber">1 / 4</div>
-                <img src="Front.jpg" style="width: 100%;">
-            </div>
+    <div class="wtDesign">
+        <div class="col Pics" style="background-color:#aaa;">
+            <!-- Container for the image gallery -->
+            <div class="container">
 
-            <div class="mySlides">
-                <div class="slideNumber">2 / 4</div>
-                <img src="Back.jpg" style="width: 100%;">
-            </div>
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="slidePic" src="Front.jpg" style="width:100%">
+                </div>
 
-            <div class="mySlides">
-                <div class="slideNumber">3 / 4</div>
-                <img src="Test.jpg" style="width: 100%;">
-            </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="slidePic" src="Back.jpg" style="width:100%">
+                </div>
 
-            <div class="mySlides">
-                <div class="slideNumber">4 / 4</div>
-                <img src="test2.jpg" style="width: 100%;">
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="slidePic" src="Test.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="slidePic" src="test2.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Front.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Front">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Back.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="The Back">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Test.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="The Left">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="test2.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="The Right">
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Next and Previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Image text -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-        <!-- Thumbnail images -->
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="Front.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Front">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Back.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Back">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Test.jpg" style="width:100%" onclick="currentSlide(3)"
-                    alt="The Left Sleeve">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="test2.jpg" style="width:100%" onclick="currentSlide(4)"
-                    alt="The Right Sleeve">
-            </div>
+        <div class="col Buttons" style="background-color:#bbb;">
+            <div class="butt sizes">T-Shirt Sizes</div>
+            <div class="butt sizeChart">T-Shirt Size Chart</div>
+            <div class="butt tsColor">T-Shirt Color</div>
+            <div class="butt tsQuantity">T-Shirt Quantity</div>
+            <div class="butt sButtons">Add to Bag || Add to Whishlist</div>
         </div>
     </div>
 
