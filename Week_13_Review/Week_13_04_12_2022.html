@@ -1,0 +1,80 @@
+<!--Jquery within html lesson-->
+
+<html>
+    <title>Week 13 JQuery</title>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Week 13 Code 01: JQuery</h1>
+        <p>Show List Item</p>
+        <ul id="myList">
+            <li>CIS 2336</li>
+            <li>CIS 3446</li>
+            <li>CIS 1336</li>
+            <li>CIS 4338</li>
+            <li>CIS 4557</li>
+        </ul>
+        <script>
+            $(function()
+            {
+                $("#myList").css("border", "1px dashed gray")
+                $("#myList").css("width","150px")
+                $("#myList").css("color","red")
+                $("li:odd").css("color","red")
+                $("li:even").css("color","green")
+
+            }
+            )
+        </script>
+    </body>
+</html>
+
+<!--Code 2-->
+
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Week 13 code 02: JQuery Hide, show and color features</h1>
+        <p id="mark-01">This is a Para-01</p>
+        <p>This is a Para-02</p>
+        <p>This is a Para-03</p>
+        <input type="button" class="hide-btn" value="Hide Me">
+        <input type="button" class="show-btn" value="Show Me">
+        <input type="button" class="color-btn" value="Color Me">
+        <input type="button" class="colora-btn" value="Color All">
+
+    </body>
+    <script>
+        $(document).ready(function()
+        {
+            //Change color
+           $(".color-btn").click(function()
+           {
+               $("#mark-01").css("background","yellow");
+           }
+           );
+           //Change color
+           $(".colora-btn").click(function()
+           {
+               $("p").css("background","yellow");
+           }
+           );
+           //Hide Me
+           $(".hide-btn").click(function()
+           {
+                $("p").hide();
+           }
+           );
+           //Show Me
+           $(".show-btn").click(function()
+           {
+                $("p").show();
+           }
+           );
+        }
+        );
+    </script>
+</html>
