@@ -1,0 +1,64 @@
+<html>
+<title>JavaScript Calculator Assignment</title>
+<head>
+    <!-- Calls for the CSS File -->
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <!-- Calls for the JS File -->
+    <script src="calculator.js"></script>
+    <table border="1">
+        <!-- Calculator Title-->
+        <tr>
+            <th class="title" colspan="4">
+                JavaScript Calculator
+            </th>
+        </tr>
+        <!-- Calculator input output feeild along with clear button-->
+        <tr>
+            <td colspan="3"><input type="text" id="inputOutput" /></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <!-- Row 2 [1 2 3 Sin]-->
+        <tr>
+            <td><input type="button" value="1" onclick="disInput('1')" /> </td>
+            <td><input type="button" value="2" onclick="disInput('2')" /> </td>
+            <td><input type="button" value="3" onclick="disInput('3')" /> </td>
+            <td><input type="button" value="Sin" onclick="disInput('Sin ')" /> </td>
+        </tr>
+        <!-- Row 3 [4 5 6 Cos]-->
+        <tr>
+            <td><input type="button" value="4" onclick="disInput('4')" /> </td>
+            <td><input type="button" value="5" onclick="disInput('5')" /> </td>
+            <td><input type="button" value="6" onclick="disInput('6')" /> </td>
+            <td><input type="button" value="Cos" onclick="disInput('Cos ')" /> </td>
+        </tr>
+        <!-- Row 4 [7 8 9 Tan]-->
+        <tr>
+            <td><input type="button" value="7" onclick="disInput('7')" /> </td>
+            <td><input type="button" value="8" onclick="disInput('8')" /> </td>
+            <td><input type="button" value="9" onclick="disInput('9')" /> </td>
+            <td><input type="button" value="Tan" onclick="disInput('Tan ')" /> </td>
+        </tr>
+        <!-- Row 5 [+ - * /]-->
+        <tr>
+            <td><input type="button" value="+" onclick="disInput('+')" /> </td>
+            <td><input type="button" value="-" onclick="disInput('-')" /> </td>
+            <td><input type="button" value="*" onclick="disInput('*')" /> </td>
+            <td><input type="button" value="/" onclick="disInput('/')" /> </td>
+        </tr>
+        <!-- Row 6 [. 0 = %]-->
+        <tr>
+            <td><input type="button" value="." onclick="disInput('.')" /> </td>
+            <td><input type="button" value="0" onclick="disInput('0')" /> </td>
+            <td><input type="button" value="=" onclick="solve()" /> </td>
+            <td><input type="button" value="%" onclick="disInput('%')" /> </td>
+        </tr>
+    </table>
+</body>
+<!-- 
+the input button combined with onclick allows for the program to call the functions which
+display the input and output alaong with doing the nessicary calculations
+-->
+</html>
