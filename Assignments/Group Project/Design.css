@@ -105,3 +105,7 @@
 .butt {
     text-align: center;
 }
+.modalSChart {
+    width: 100%;
+    max-width: 100px;
+}
