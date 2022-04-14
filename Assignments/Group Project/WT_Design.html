@@ -3,10 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="Design.css">
+    <script src="Design.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="wtDesign">
+
+
+    <div class="designWindow">
         <div class="col Pics" style="background-color:#aaa;">
             <!-- Container for the image gallery -->
             <div class="container">
@@ -62,51 +66,27 @@
                 </div>
             </div>
         </div>
-        <div class="col Buttons" style="background-color:#bbb;">
-            <div class="butt sizes">T-Shirt Sizes</div>
-            <div class="butt sizeChart">T-Shirt Size Chart</div>
-            <div class="butt tsColor">T-Shirt Color</div>
+        <div class="rContainer">
+            <div class="tColor">T-Shirt Color</div>
+
+            <div>T-Shirt Size Chart
+                <p class="SizeChart">
+                    <img src="tSizeChart.jpg">
+                </p>
+                <input type="button" class="showHide" value="T-Shirt Sizes">
+            </div>
+
+            <div class="sizes">T-Shirt Sizes</div>
+
             <div class="butt tsQuantity">T-Shirt Quantity</div>
+
+            <div class="butt tsColor">T-Shirt Color</div>
+
             <div class="butt sButtons">Add to Bag || Add to Whishlist</div>
         </div>
     </div>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
 </body>
 
 </html>
