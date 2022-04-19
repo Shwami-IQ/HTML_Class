@@ -1,0 +1,47 @@
+<html>
+<title> </title>
+<head>
+<script src="java.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header" align="center">
+    <nav class="main-nav nav">
+	<br>
+		<image src = "logo.png" width="180px" height="150px" align="left">
+		<button onClick="parent.location='SignIn.html'">Sign in/Register</button>
+		<button onClick="parent.location='AboutUs.html'">About Us</button>
+		<button onClick="parent.location='FQA.html'">FAQ/T&C</button>
+		<button onClick="parent.location='AdultM.html'">Adult Male</button>
+		<button onClick="parent.location='AdultF.html'">Adult Female</button>
+		<button onClick="parent.location='Childrens.html'">Childrens</button>
+		<button onClick="parent.location='Return.html'">Returns</button>
+		<button onClick="parent.location='review.html'">Leave A Review</button>
+    </nav>
+	</header>
+	<div class = "mainbody">
+	<h2>SignIn</h2>
+	<fieldset>
+	<form>
+	  Email Address: <input type="text" placeholder = "Enter email address" id="uname" required><br> <br>
+	  Password: <input type="text" placeholder = "Enter passowrd" id="pass" required> <br> <br>
+	  <button class="innerbuttons" type="reset" onclick="getInfo()">Sign In</button>
+	  </form>
+	</fieldset>
+	<h3>Dont have an account?</h3>
+	<fieldset>
+	<form>
+	  First and Last Name: <input type="text" placeholder = "First Last" id="fname"><br> <br>
+	  Address: <input type="text" placeholder = "# street,City,State Zip" id="lname"><br> <br>
+	  Email Address: <input type="text" placeholder = "Enter email address" id="unameR"><br> <br>
+	  Password: <input type="text" placeholder = "Enter passowrd" id="passR"> <br> <br>
+	  <button class="innerbuttons" type="reset" onclick="clear">Register</button>
+	  </form>
+	</fieldset>
+	<br>
+	</div>
+	<footer>
+	<h2 align="center">By: Rubayet Hridi</h2>
+	</footer>
+</body>
+</html>

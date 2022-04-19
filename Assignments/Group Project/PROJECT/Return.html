@@ -1,0 +1,59 @@
+<html>
+<title> </title>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="java.js"></script>
+</head>
+<body>
+<header class="main-header" align="center">
+    <nav class="main-nav nav">
+	<br>
+		<image src = "logo.png" width="180px" height="150px" align="left">
+		<button onClick="parent.location='SignIn.html'">Sign in/Register</button>
+		<button onClick="parent.location='AboutUs.html'">About Us</button>
+		<button onClick="parent.location='FQA.html'">FAQ/T&C</button>
+		<button onClick="parent.location='AdultM.html'">Adult Male</button>
+		<button onClick="parent.location='AdultF.html'">Adult Female</button>
+		<button onClick="parent.location='Childrens.html'">Childrens</button>
+		<button onClick="parent.location='Return.html'">Returns</button>
+		<button onClick="parent.location='review.html'">Leave A Review</button>
+    </nav>
+	</header>
+	<br>
+	<div class= "mainbody">
+	<br>
+	<fieldset align="left">
+	<form>
+	<h2>Return Request Form</h2>
+	<br>
+	Name:<input type="text" placeholder = "First">
+		<input type="text" placeholder = "Last">
+		<br>
+		<br>
+		Order ID:<input type="text">
+		<br>
+		<br>
+		Reason For Return?
+<select>
+	<option></option>
+    <option value="betterprice">Better price available</option>
+	<option value="wrong">Bought wrong part</option>
+	<option value="incompatible">Incompatible or not useful</option>
+	<option value="notapproved">Didn't approve purchase</option>
+    <option value="notneeded">No longer needed</option>
+	<option value="expectaions">Did not meet expectaions</option>
+	<option value="Late">Late arrival</option>
+	<option value="Damaged">Damaged</option>
+</select>
+<br>
+<br>
+	<button class="innerbuttons" type="reset" onClick="showMessage2()">Submit</button>
+	</form>
+	</fieldset>
+	<br>
+	</div>
+	<footer>
+<h2 align="center">By: Karim Hanna</h2>
+</footer>
+</body>
+</html>

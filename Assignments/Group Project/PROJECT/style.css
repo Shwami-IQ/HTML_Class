@@ -1,0 +1,31 @@
+.mainbody{
+background-color: #474e5d;
+color: white;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+button{
+width:180px;
+height:100px;
+font-family:AR CENA;
+font-size:22;
+}
+
+.innerbuttons{
+width:auto;
+height:auto;
+}
+
+.aboutus {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
